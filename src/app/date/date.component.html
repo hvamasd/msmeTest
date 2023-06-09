@@ -1,0 +1,15 @@
+<label style="margin-left: 10px; margin-top: 5px; margin-bottom: 5px; font-size: 16px; font-weight: 500;" >Enter your Date of Birth</label>
+<div class="form-group">
+    <div style="margin-top: 10px;" class="date-inputs">
+        <input required (input)="validateDate(1)" class="dob-box" type="text" [(ngModel)]="day" placeholder="03" (keydown)="onKeyDown($event)" #dateField />
+        <input (input)="validateDate(2)" class="dob-box" type="text" [(ngModel)]="month" placeholder="10" (keydown)="onKeyDown($event)" #monthField>
+        <input (input)="validateDate(3)" class="dob-box" type="number" [(ngModel)]="year" placeholder="1992" #yearField>
+    </div>
+    <div class="date-inputs">
+        <div class="f"><p></p></div><p>Date</p>
+        <div class="f"><p></p></div><p>Month</p>
+        <div class="f"><p></p></div><p>Year</p>
+    </div>
+    <div *ngIf="dateError" class="error-message">Invalid Date of Birth.</div>
+</div>
+

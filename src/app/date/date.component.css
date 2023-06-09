@@ -1,0 +1,39 @@
+.form-group {
+    margin-bottom: 15px;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.date-inputs {
+    display: flex;
+}
+
+.date-inputs input {
+    width: 30%;
+    /* margin-right: 10px; */
+    margin-left: 10px;
+    height: 40px;
+}
+
+.date-inputs p {
+    margin-top: 10px;
+    width: 30%;
+    margin-right: 40px;
+    height: 16px;
+    margin-bottom: 0px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+
+
+}
+.f{
+    text-align: center;
+    text-size-adjust: 5px;
+}

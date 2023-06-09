@@ -1,0 +1,7 @@
+<div>
+    <label style="margin-left: 10px; margin-top: 5px; margin-bottom: 5px; font-size: 16px; font-weight: 500;">Udyam Registration Number (Optional)</label><br>
+    <input [(ngModel)]="inputValue8" (input)="inputValue8 = formatInputValue(inputValue8)" type="text" style="margin-top: 15px; height: 40px;" id="udyam-input" placeholder="-__-__-_______" name="udyam"><br/>
+    <span class="error-message" *ngIf="showError">Invalid input format.</span>
+  </div>
+  
+  

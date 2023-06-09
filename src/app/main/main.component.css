@@ -1,0 +1,153 @@
+
+#c{
+    font-family: Google Sans Medium;
+    font-size: 24px;
+    
+    
+    letter-spacing: 0px;
+    text-align: center;
+    /* padding-top: -1px; */
+    margin-top: -30px;
+    
+  }
+  .para{
+    width: 300px;
+  height: 24px;
+  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height, or 120% */
+  
+  letter-spacing: 0.2px;
+  
+  color: #424242;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 1;
+  
+  }
+  .p{
+    flex: 1 1 auto
+  
+  }
+  #lbl{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  #dte{
+    padding-top: 30px;
+  }
+  .gender {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10PX;
+    
+  
+  }
+  .btn{
+    width: 30%;
+    margin-right: 10px;
+  }
+  .Ptitle {
+    width: 271px;
+    height: 15px;
+    
+  
+    /* Web & Android/Subtitle 1 - 16pt
+  
+  Roboto Medium 16/24
+  */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 34px;
+    /* or 150% */
+  
+    letter-spacing: 0.2px;
+  
+    color: #424242;
+  
+  }
+  .form-group {
+    margin-bottom: 15px;
+    
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .date-inputs {
+    display: flex;
+  }
+  
+  .date-inputs input {
+    width: 30%;
+    margin-right: 10px;
+    height: 30px;
+  }
+  
+  .date-inputs p {
+    margin-top: 10px;
+    width: 30%;
+    margin-right: 40px;
+    height: 15px;
+    margin-bottom: 0px;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+  
+  
+  }
+  .f{
+    text-align: center;
+    text-size-adjust: 5px;
+  }
+  .container {
+    display: flex;
+    padding: auto; /* Adjust as needed */
+  }
+  #s{
+    padding-top: 9px;
+    padding-bottom: 3px;
+  }
+  .form-control-range{
+    width: 80%;
+  }
+  .lbl{
+    font-size: 18px;
+  }
+  .example-button-row{
+    border-radius: 20px;
+    background-color: blue;
+    text-align: center;
+    box-sizing: 20px;
+  }
+  #pencil{
+    
+      margin-left: auto;
+    
+  }
+  #text{
+    padding-left: 29px;
+  }
+  #continue{
+    align-items: center;
+  }
+  #common{
+    margin-left: 10px;
+  }
+  .date-inputs1{
+    margin-left: 10px;
+    
+  }

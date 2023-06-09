@@ -1,0 +1,6 @@
+.mat-horizontal-stepper-header-container {
+    align-items: flex-end;
+  }
+  ::ng-deep .mat-step-text-label {
+    font-size: 12px; /* Adjust the font size as per your requirement */
+  }

@@ -1,0 +1,15 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  mat-slider {
+    width: 100%
+  }
+  ::ng-deep .mat-step-header .mat-step-icon-content {
+    display: none;
+  }
+  
+  ::ng-deep .mat-step-header .mat-step-icon {
+    background-color: #1A73E8;
+    color: white;
+  }
+  

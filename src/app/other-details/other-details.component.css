@@ -1,0 +1,12 @@
+#inputField{
+    width: 364px;
+    background-color: rgb(255, 254, 254);
+    height: 56px;
+}
+.box {
+    
+    margin-right: 16px; /* Space between divs */
+  }
+  #d{
+    margin-left: auto;
+  }

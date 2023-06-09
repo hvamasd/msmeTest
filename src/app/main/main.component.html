@@ -1,0 +1,178 @@
+<div style="width: 100%;">
+    <app-header></app-header>
+    <app-stepper></app-stepper>
+    <label id="c">Confirm a few Details</label>
+  
+    <div class="container">
+      <svg width="29px" height="23px" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M10 0.759766C4.48 0.759766 0 5.23977 0 10.7598C0 16.2798 4.48 20.7598 10 20.7598C15.52 20.7598 20 16.2798 20 10.7598C20 5.23977 15.52 0.759766 10 0.759766ZM5.07 17.0398C5.5 16.1398 8.12 15.2598 10 15.2598C11.88 15.2598 14.51 16.1398 14.93 17.0398C13.57 18.1198 11.86 18.7598 10 18.7598C8.14 18.7598 6.43 18.1198 5.07 17.0398ZM10 13.2598C11.46 13.2598 14.93 13.8498 16.36 15.5898C17.38 14.2498 18 12.5798 18 10.7598C18 6.34977 14.41 2.75977 10 2.75977C5.59 2.75977 2 6.34977 2 10.7598C2 12.5798 2.62 14.2498 3.64 15.5898C5.07 13.8498 8.54 13.2598 10 13.2598ZM10 4.75977C8.06 4.75977 6.5 6.31977 6.5 8.25977C6.5 10.1998 8.06 11.7598 10 11.7598C11.94 11.7598 13.5 10.1998 13.5 8.25977C13.5 6.31977 11.94 4.75977 10 4.75977ZM8.5 8.25977C8.5 9.08977 9.17 9.75977 10 9.75977C10.83 9.75977 11.5 9.08977 11.5 8.25977C11.5 7.42977 10.83 6.75977 10 6.75977C9.17 6.75977 8.5 7.42977 8.5 8.25977Z"
+          fill="blue" />
+      </svg>
+  
+  
+  
+      <label style="margin-left: 8px;" class="para">Personal Information</label>
+    </div>
+  
+  
+  
+    <!-- Header  -->
+    <!-- slider -->
+    <!-- <mat-slider min="50000" max="200000" step="10000" [(ngModel)]="sliderValue" (input)="updateParagraph()">
+      <input matSliderThumb>
+    </mat-slider>
+    
+    <p>Selected value: {{ sliderValue }}</p> -->
+    <!-- <label id="lbl" >Enter your Date of Birth</label> -->
+    <div id="common"><app-date id="dte"></app-date>
+      <div>
+        <b style="margin-left: 10px; margin-top: 5px; margin-bottom: 5px; font-size: 16px; font-weight: 500;" class="Ptitle">What’s your gender?</b>
+        <div class="gender">
+          <!-- <input (click)="printGender" value="Male" [(ngModel)]="gender" class="choice" type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+          <label class="btn btn-outline-secondary" for="option1">Male</label>
+  
+          <input value="Female" [(ngModel)]="gender" class="choice" type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+          <label class="btn btn-outline-secondary" for="option2">Female</label>
+  
+          <input value="Other" [(ngModel)]="gender" class="choice" type="radio" class="btn-check" name="options" id="option3" autocomplete="off" >
+          <label class="btn btn-outline-secondary" for="option3">Other</label> -->
+  
+          <button  (click)="printGender('Male')" class="btn btn-outline-secondary">Male</button>
+          <button (click)="printGender('Female')" class="btn btn-outline-secondary">Female</button>
+          <button (click)="printGender('Other')" class="btn btn-outline-secondary">Other</button>
+        </div>
+      </div>
+      <div class="container" id="s">
+  
+        <svg width="29px" height="23px" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M17 17.0194H2.45455C1.65455 17.0194 1 16.3649 1 15.5649V6.11031C1 5.31031 1.65455 4.65576 2.45455 4.65576H17C17.8 4.65576 18.4545 5.31031 18.4545 6.11031V15.5649C18.4545 16.3649 17.8 17.0194 17 17.0194Z"
+            stroke="#1A73E8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+          <path
+            d="M14.5273 10.4739H4.92727C2.74545 10.4739 1 8.72849 1 6.54667V6.11031C1 5.31031 1.65455 4.65576 2.45455 4.65576H17C17.8 4.65576 18.4545 5.31031 18.4545 6.11031V6.54667C18.4545 8.72849 16.7091 10.4739 14.5273 10.4739Z"
+            stroke="#1A73E8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M5.36365 11.9287V10.4741" stroke="#1A73E8" stroke-width="1.5" stroke-miterlimit="10"
+            stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M14.0909 11.9287V10.4741" stroke="#1A73E8" stroke-width="1.5" stroke-miterlimit="10"
+            stroke-linecap="round" stroke-linejoin="round" />
+          <path
+            d="M4.85449 4.65589C5.50904 2.5468 7.39995 1.01953 9.72722 1.01953C12.0545 1.01953 13.9454 2.5468 14.5999 4.65589"
+            stroke="#1A73E8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+  
+  
+        <label style="margin-left: 8px;" class="para">Business Information</label>
+      </div>
+  
+      <label style="margin-left: 10px; margin-top: 5px; margin-bottom: 5px; font-size: 16px; font-weight: 500;">When did you start your business?</label>
+      <div style="margin-top: 10px;" class="form-group">
+        <div class="date-inputs1">
+          <input style="width: 30%; height: 40px;" (input)="validateDate()" class="dob-box" type="text" [(ngModel)]="month" placeholder="04"
+            (keydown)="onKeyDown($event)" #monthField>
+          <input style="width: 30%; height: 40px; margin-left: 10px; " (input)="validateDate()" class="dob-box" type="number" [(ngModel)]="year" placeholder="1992" #yearField>
+        </div>
+        <div class="date-inputs">
+          <div class="f">
+            <p></p>
+          </div>
+          <p>Month</p>
+          <div class="f">
+            <p></p>
+          </div>
+          <p>Year</p>
+        </div>
+        <div *ngIf="dateError" class="error-message">Invalid Input Date.</div>
+      </div>
+  
+      <app-udyam></app-udyam>
+      <div>
+        <svg width="364" height="30" viewBox="0 0 364 30" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
+        <div class="form-group">
+          <label style="margin-left: 10px; margin-top: 5px; margin-bottom: 5px; font-size: 16px; font-weight: 500;" class="lbl" for="loanAmountSlider">Required Loan Amount</label>
+          <label style="margin-left: 10px;" class="lbl"> <mat-icon>₹</mat-icon> {{ sliderValue }}</label>
+          <input type="range" class="form-control-range" id="loanAmountSlider" min="50000" max="200000" step="10000"
+            [value]="sliderValue" (input)="onSliderChange($event)">
+  
+        </div>
+      </div>
+      <form>
+        <div style="display: flex" id="addressid">
+          <svg width="29px" height="23px" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M17 17.0194H2.45455C1.65455 17.0194 1 16.3649 1 15.5649V6.11031C1 5.31031 1.65455 4.65576 2.45455 4.65576H17C17.8 4.65576 18.4545 5.31031 18.4545 6.11031V15.5649C18.4545 16.3649 17.8 17.0194 17 17.0194Z"
+              stroke="#1A73E8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M14.5273 10.4739H4.92727C2.74545 10.4739 1 8.72849 1 6.54667V6.11031C1 5.31031 1.65455 4.65576 2.45455 4.65576H17C17.8 4.65576 18.4545 5.31031 18.4545 6.11031V6.54667C18.4545 8.72849 16.7091 10.4739 14.5273 10.4739Z"
+              stroke="#1A73E8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M5.36365 11.9287V10.4741" stroke="#1A73E8" stroke-width="1.5" stroke-miterlimit="10"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M14.0909 11.9287V10.4741" stroke="#1A73E8" stroke-width="1.5" stroke-miterlimit="10"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M4.85449 4.65589C5.50904 2.5468 7.39995 1.01953 9.72722 1.01953C12.0545 1.01953 13.9454 2.5468 14.5999 4.65589"
+              stroke="#1A73E8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <div>
+            <b sty >Shri Supermarket</b>
+  
+          </div>
+          <div id="pencil">
+  
+            <!-- <img (click)="pencil_edit_enabled()" src="./../assets/ic_mode_edit_24px.png" id="pencil" alt="pencil"> -->
+            <svg (click)="pencil_edit_enabled()" width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M19.06 3.58988L20.41 4.93988C21.2 5.71988 21.2 6.98988 20.41 7.76988L17.64 10.5399L7.18 20.9999H3V16.8199L13.4 6.40988L16.23 3.58988C17.01 2.80988 18.28 2.80988 19.06 3.58988ZM5 18.9999L6.41 19.0599L16.23 9.22988L14.82 7.81988L5 17.6399V18.9999Z"
+                fill="#5F6368" />
+            </svg>
+  
+          </div><br>
+        </div>
+        <div id="text">
+          <p style="width: 60%; display: inline;">Shop no. 2, Mhatharpada Road,</p><br />
+          <p style="width: 60%; display: inline;"> Andheri(W), Mumbai 400058</p>
+        </div>
+      </form>
+  
+      <div *ngIf="pencil_edit" id="editing" style="font-size: 18px;">
+        <form style="margin-left: 10px;" action="">
+          <label for="pincode">Shop Pincode</label>
+          <input style="margin-top: 5px;" style="margin-top: 5px;" type="text" placeholder="824124" id="picode_input"  /><br>
+  
+          <label for="shop_number">Shop number and street name</label>
+          <input style="margin-top: 5px;" type="text" placeholder="Om Sai"  id="shop_input" /><br>
+  
+          <label for="area">Area/Locality/Village</label>
+          <input style="margin-top: 5px;" type="text" placeholder="Obra" id="area_input" /><br>
+  
+          <label for="city">City</label>
+          <input style="margin-top: 5px;" type="text" placeholder="Aurangabad" id="city_input" /><br>
+  
+          <label for="state">State</label>
+          <input style="margin-top: 5px;" type="text" placeholder="Bihar" id="state_label" /><br>
+  
+        </form>
+      </div>
+      <br>
+  
+      <app-other-details></app-other-details>
+      <P  style="margin-right: 8px; margin-top: 12px;"  >By continuing, I share my consent with DMI finance to collect, store and verify the below details for the purpose
+        of
+        processing my loan application.</P>
+      <DIv style="margin-left: 10px;">
+        My Credit Report (from credit bureaus)
+        <BR>
+        KYC (from CERSAI)
+      </DIv>
+      <P style="margin-right: 8px;" >I hereby agree to apply for and avail loan facility from DMI Finance Private Limited in accordance with the
+        following terms and condition</P>
+      
+  
+    </div>
+    <div style="display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;" ><button style="width: 30%; background-color: #1A73E8; border-radius: 20px" mat-raised-button color="primary" (click)="onContinue()">Continue</button></div>
+  </div>
+  

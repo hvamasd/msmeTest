@@ -1,0 +1,53 @@
+<form>
+    <div style="display: flex" id="addressid">
+        <svg width="29" height="23" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.99996 18.5932C14.6023 18.5932 18.3333 14.8622 18.3333 10.2598C18.3333 5.65747 14.6023 1.92651 9.99996 1.92651C5.39759 1.92651 1.66663 5.65747 1.66663 10.2598C1.66663 14.8622 5.39759 18.5932 9.99996 18.5932Z" stroke="#1A73E8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 13.5931V10.2598" stroke="#1A73E8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 6.92651H10.0083" stroke="#1A73E8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+      <div>
+        <b style="margin-left: 8px;" >Other Details</b>
+  
+      </div>
+      <div id="d" style="margin-right: 5px;">
+  
+        <!-- <img (click)="pencil_edit_enabled()" src="./../assets/ic_mode_edit_24px.png" id="pencil" alt="pencil"> -->
+        <svg (click)="drop_edit_enabled()"  width="15" height="10" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.59 7.41L6 2.83L1.41 7.41L0 6L6 0L12 6L10.59 7.41Z" fill="#1A73E8"/>
+            </svg>
+      </div><br>
+    </div >
+    
+  </form>
+
+<div *ngIf="drop_edit"><div>
+    <label style="margin-left: 10px; margin-top: 5px; margin-bottom: 5px; font-size: 16px; font-weight: 500;" >Business Registered Name</label><br>
+<input style="border-color: #D8D8D8;border-width: 1px; border-style: solid; " class="box" type="text" id="inputField" placeholder="  XYZ pvt ltd"    [(ngModel)]="inputValue1">
+   </div>
+   <div>
+    <label style="margin-left: 10px; margin-top: 5px; margin-bottom: 5px; font-size: 16px; font-weight: 500;" >Owner Name</label><br>
+<input style="border-color: #D8D8D8 ;border-width: 1px; border-style: solid;" class="box" type="text" id="inputField" placeholder="   Gautam Raj"    [(ngModel)]="inputValue2">
+   </div>
+   <div>
+    <label style="margin-left: 10px; margin-top: 5px; margin-bottom: 5px; font-size: 16px; font-weight: 500;" >Business Type</label><br>
+<input style="border-color: #D8D8D8;border-width: 1px; border-style: solid;" class="box" type="text" id="inputField" placeholder="  Grocery"    [(ngModel)]="inputValue3">
+   </div>
+   <div>
+    <label style="margin-left: 10px; margin-top: 5px; margin-bottom: 5px; font-size: 16px; font-weight: 500;" >Registered GSTIN</label><br>
+<input style="border-color: #D8D8D8;border-width: 1px; border-style: solid;" class="box" type="text" id="inputField" placeholder="  Not Available"    [(ngModel)]="inputValue4">
+   </div>
+   <div>
+    <label style="margin-left: 10px; margin-top: 5px; margin-bottom: 5px; font-size: 16px; font-weight: 500;">Email</label><br>
+    <input style="border-color: #D8D8D8;border-width: 1px; border-style: solid;" class="box" type="text" id="inputField" placeholder="  krgautamraj1998@gmail.com" [(ngModel)]="inputValue7" (input)="validateEmail()" >
+    <span *ngIf="invalidEmail" style="color: red;">Please enter a valid email address.</span>
+  </div>
+  <div>
+    <label style="margin-left: 10px; margin-top: 5px; margin-bottom: 5px; font-size: 16px; font-weight: 500;">PAN</label><br>
+    <input style="border-color: #D8D8D8;border-width: 1px; border-style: solid;" class="box" type="text" id="inputField" placeholder="   BYJPV1591F" [(ngModel)]="inputValue6" (input)="validatePAN()" >
+    <span *ngIf="invalidPAN" style="color: red;">Please enter a valid PAN number.</span>
+  </div>
+  <div>
+    <label style="margin-left: 10px; margin-top: 5px; margin-bottom: 5px; font-size: 16px; font-weight: 500;">Phone number</label><br>
+    <input style="border-color:  #D8D8D8;border-width: 1px; border-style: solid;" class="box" type="text" id="inputField" placeholder="  9983072903" [(ngModel)]="inputValue5" (input)="validatePhoneNumber()" >
+    <span *ngIf="invalidPhoneNumber" style="color: red;">Please enter a valid 10-digit phone number.</span>
+  </div>
